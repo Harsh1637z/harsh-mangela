@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Checkout - Fitness Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                  <a href="index.html"> <img src="images1/logo-removebg-preview.png" width="125px">  </a>            
+                  </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+               <a href="cart.html"><img src="images1/shopping-cart.png" width="30px" height="30px"></a>
+                <img src="images1/icons8-menu-50.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+
+    <div class="container">
+        <div class="checkout-box">
+            <h2>Checkout</h2>
+
+            <div id="order-summary" class="order-summary"></div>
+
+            <form id="billing-form" class="billing-form">
+                <h3>Billing Details</h3>
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="address" placeholder="Address" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="zip" placeholder="Zip Code" required>
+                
+                <h3>Payment Method</h3>
+                <select id="payment-method">
+                    <option value="cod">Cash on Delivery</option>
+                    <option value="card">Credit/Debit Card</option>
+                </select>
+
+                <button type="submit" class="checkout-btn">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function displayOrderSummary() {
+            let orderSummary = document.getElementById("order-summary");
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let total = 0;
+
+            orderSummary.innerHTML = "<h3>Order Summary</h3>";
+
+            cart.forEach((item) => {
+                orderSummary.innerHTML += `<p>${item.name} x ${item.quantity} - Rs.${item.price * item.quantity}</p>`;
+                total += item.price * item.quantity;
+            });
+
+            orderSummary.innerHTML += `<h4>Total: Rs.${total}</h4>`;
+        }
+
+        document.getElementById("billing-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Order Placed Successfully!");
+            localStorage.removeItem("cart");
+            window.location.href = "index.html"; // Redirect to home page after order
+        });
+
+        displayOrderSummary();
+    </script>
+
+
+
+
+<!------payment-->
+<button id="pay-button">Pay Now</button>
+</body>
+</html>
+
+<!---java------->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+    document.getElementById("pay-button").addEventListener("click", function() {
+        var options = {
+            key: "YOUR_RAZORPAY_KEY", // Get from Razorpay Dashboard
+            amount: 50000, // Example: 500.00 INR
+            currency: "INR",
+            name: "Fitness Store",
+            description: "Order Payment",
+            handler: function(response) {
+                alert("Payment Successful! Payment ID: " + response.razorpay_payment_id);
+                window.location.href = "success.html"; // Redirect after success
+            }
+        };
+
+        var rzp1 = new Razorpay(options);
+        rzp1.open();
+    });
+</script>

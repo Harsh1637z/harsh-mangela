@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Fitness Store</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+<div class="header">
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                  <a href="index.html"> <img src="images1/logo-removebg-preview.png" width="125px">  </a>            
+                  </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+               <a href="cart.html"><img src="images1/shopping-cart.png" width="30px" height="30px"></a>
+                <img src="images1/icons8-menu-50.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+<h1>Transform Your Health,<br> Shop with Confidence</h1>
+<p>Unlock your full potential with premium supplements that fuel your body and elevate your health.<br> Start your journey to a stronger, healthier you today.</p>
+<a href="product.html" class="btn">Explore Now &#187;</a>               
+</div>
+                <div class="col-2">
+<img src="images1/homeimg-removebg-preview.png">
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-------featured categories---------->
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="images1/atom1.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="images1/gnc1.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="images1/hf1.jpg" alt="">
+            </div>
+            
+        </div>
+    </div>
+   
+</div>
+
+<!-------featured products---------->
+<div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+           <a href="atom.html"> <img src="images1/atom1.jpg"></a>
+           <a href="atom.html"> <h4>Asitis Atom Whey Protein</h4></a>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>1999rs</p>
+        </div>
+        <div class="col-4">
+           <a href="gnc.html"> <img src="images1/gnc1.jpg"></a>
+           <a href="gnc.html"> <h4>GNC Performance Whey Protein</h4></a>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>2999rs</p>
+        </div>
+        <div class="col-4">
+           <a href="mbc.html"> <img src="images1/mbc1.jpg"></a>
+            <a href="mbc.html"><h4>MuscleBlaze Creatine Monohydrate CreAMP</h4></a>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>999rs</p>
+        </div>
+        <div class="col-4">
+           <a href="healthfarm pre.html"> <img src="images1/hfp1.jpg"></a>
+           <a href="healthfarm pre.html"> <h4>Healthfarm Thpre X Pre Workout Powder.</h4></a>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>1299rs</p>
+        </div>
+    </div>
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+           <a href="atomc.html"> <img src="images1/on1.jpg"></a>
+           <a href="atomc.html"> <h4>ON Creatine Monohydrate</h4></a>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>1999rs</p>
+        </div>
+        <div class="col-4">
+           <a href="gncc.html"> <img src="images1/gncC1.jpg"></a>
+           <a href="gncc.html"> <h4>GNC Creatine Monohydrate</h4></a>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>2999rs</p>
+        </div>
+        <div class="col-4">
+            <a href="healthfarm whey.html"><img src="images1/hf1.jpg"></a>
+           <a href="healthfarm whey.html"> <h4>Healthfarm Performance Whey Protein</h4></a>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>999rs</p>
+        </div>
+        <div class="col-4">
+           <a href="mbp.html"> <img src="images1/mbp1.jpg"></a>
+           <a href="mbp.html"> <h4>MuscleBlaze Pre Workout 200 Xtreme</h4></a>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>1299rs</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="images1/atomp1.jpg">
+            <h4>Asitis Nutrition Atom L Citrulline Malate Powder</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>1999rs</p>
+        </div>
+        <div class="col-4">
+            <img src="images1/gncp1.jpg">
+            <h4>GNC Pro Performance Creatine Monohydrate</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>2999rs</p>
+        </div>
+        <div class="col-4">
+           <a href="product detail.html"> <img src="images1/mb1.jpg"></a>
+            <h4>MuscleBlaze Biozyme Performance Whey Protein</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>999rs</p>
+        </div>
+        <div class="col-4">
+            <img src="images1/hfc1.jpg">
+            <h4>Healthfarm Creatine Monohydrate Powder </h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>1299rs</p>
+        </div>
+    </div>    
+</div>
+<!--------offer-------->
+<div class="offer"> 
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+<img src="images1/exclusive3-removebg-preview.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Avialable on Fitness Store</p>
+                <h1>Premium Whey Protein</h1>
+                <small>WINNER, PRODUCT OF THE YEAR, SPORTS NUTRITION: MuscleBlaze Biozyme Whey Protein won product of the year in the sports nutrition category at the NutraIngredients Award 2021 in Singapore. Testimony of the research, quality & innovation behind the Biozyme series</small>
+<br><a href="product detail.html" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-------testimonial-------->
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>As an IFBB Pro, I count on "Fitness supplements" for premium supplements that deliver consistent, proven results.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <img src="images1/ifbb.jpg">
+                <h3>Biki Singh</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>I have associalted with GNC India as it has its own standard and reliability when it comes to a quality and results</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <img src="images1/runner.jpg">
+                <h3>Elan Alex</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>For someone serious about football, GNC’s supplements are non-negotiable. Supports me to excel on and off the field.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <img src="images1/cr7.jpg">
+                <h3>Cristiano Ronaldo</h3>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!------brands-------->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="images1/AS-IT-IS-brand-logo.jpg">
+            </div>
+            <div class="col-5">
+                <img src="images1/gnc logo.png">
+            </div>
+ 
+            <div class="col-5">
+                <img src="images1/hf logo.png">
+            </div>
+ 
+            <div class="col-5">
+                <img src="images1/muscleblaze logo.jpg">
+            </div>
+ 
+        </div>
+    </div>
+</div>
+<!-------footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download App for Android and IOS mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images1/play store.png">
+                    <img src="images1/App_Store_(iOS).svg.png">
+                </div>
+             </div>
+             <div class="footer-col-2">
+                <img src="images1/logo-removebg-preview.png">
+                <p>We are committed to providing premium supplements that support your health and fitness goals.</p>
+             </div>
+             <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+             </div>
+             <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>
+             </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2025- Roman & Harsh</p>
+    </div>
+</div>
+<!--------js for toggle menu------------>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+    {
+        MenuItems.style.maxHeight = "200px";    
+    }
+    else
+    {
+        MenuItems.style.maxHeight = "0px";
+    }
+    }
+</script>
+    </body>
+</html>
